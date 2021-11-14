@@ -53,10 +53,11 @@ input {
   margin: 0.1rem auto;
   padding: 0.8rem;
   text-align: center;
-  border: 1px dashed var(--button-color);
+  /* border: 1px dashed var(--button-color); */
   width: 315px;
   height: 180px;
   font-size: 1.2rem;
+  border-radius: 40px;
 }
 
 .activeProfit {
@@ -66,11 +67,19 @@ input {
 .activeLoss {
   color: var(--button-color);
 }
+/* .activeBoxProfit {
+  box-shadow: 0px 0px 50px 5px rgb(76, 216, 33);
+}
+.activeBoxLoss {
+  box-shadow: 0px 0px 50px 5px var(--button-color);
+} */
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 780px) {
   .container {
     display: inline-block;
-    margin: 6rem 2rem;
+    vertical-align: middle;
+    margin: 6rem 5%;
+    align-items: center;
     width: 46%;
     font-size: 1.7rem;
   }
@@ -84,18 +93,19 @@ input {
     text-align: left;
   }
 
-  .calculate {
-    font-size: 1.7rem;
-    margin: 1.8rem auto;
-    width: 450px;
+  .calculate,
+  .clear {
+    font-size: 1.5rem;
+    width: 36%;
+    padding: 10px 30px 10px 30px;
   }
 
   .message {
     display: inline-block;
-    /* margin: 0.1rem 2rem; */
-    padding: 1rem;
-    width: 40%;
-    /* height: 300px; */
+    vertical-align: middle;
+    margin: auto 5%;
+    height: 300px;
+    width: 30%;
     font-size: 1.5rem;
   }
 }
