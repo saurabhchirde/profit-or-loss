@@ -36,10 +36,64 @@ input {
 .calculate {
   font-size: 1.5rem;
   margin: 1.8rem auto;
-  width: 348px;
-  padding: 10px 145px;
+  width: 338px;
+  padding: 10px 120px;
   border-radius: 30px;
   background-color: var(--button-color);
   color: var(--text-color);
   border-color: var(--text-color);
+}
+
+.output {
+  margin: 0.1rem auto;
+  padding: 0.8rem;
+  border: 1px dashed var(--button-color);
+  width: 315px;
+  height: 160px;
+  font-size: 1.6rem;
+}
+
+.activeProfit {
+  color: rgb(80, 224, 36);
+}
+
+.activeLoss {
+  color: var(--button-color);
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    margin: 2rem auto;
+    width: 350px;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  input {
+    font-size: 1.2rem;
+    width: 185px;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-radius: 30px;
+  }
+
+  .calculate {
+    font-size: 1.5rem;
+    margin: 1.8rem auto;
+    width: 338px;
+    padding: 10px 120px;
+    border-radius: 30px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
+  }
+
+  .output {
+    margin: 0.1rem auto;
+    padding: 0.8rem;
+    border: 1px dashed var(--button-color);
+    width: 315px;
+    height: 160px;
+    font-size: 1.6rem;
+  }
 }
