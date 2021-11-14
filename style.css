@@ -44,13 +44,13 @@ input {
   border-color: var(--text-color);
 }
 
-.output {
+.message {
   margin: 0.1rem auto;
   padding: 0.8rem;
   border: 1px dashed var(--button-color);
   width: 315px;
-  height: 160px;
-  font-size: 1.6rem;
+  height: 180px;
+  font-size: 1.3rem;
 }
 
 .activeProfit {
@@ -61,39 +61,35 @@ input {
   color: var(--button-color);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 640px) {
   .container {
-    margin: 2rem auto;
-    width: 350px;
-    text-align: center;
-    font-size: 1.4rem;
+    display: inline-block;
+    margin: 6rem 2rem;
+    width: 46%;
+    font-size: 1.7rem;
+  }
+  hr {
+    width: 55%;
   }
 
   input {
-    font-size: 1.2rem;
-    width: 185px;
-    text-align: center;
-    padding: 0.5rem 0 0.5rem 1rem;
-    border-radius: 30px;
+    font-size: 1.5rem;
+    width: 250px;
+    text-align: left;
   }
 
   .calculate {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 1.8rem auto;
-    width: 338px;
-    padding: 10px 120px;
-    border-radius: 30px;
-    background-color: var(--button-color);
-    color: var(--text-color);
-    border-color: var(--text-color);
+    width: 450px;
   }
 
-  .output {
-    margin: 0.1rem auto;
-    padding: 0.8rem;
-    border: 1px dashed var(--button-color);
-    width: 315px;
-    height: 160px;
-    font-size: 1.6rem;
+  .message {
+    display: inline-block;
+    /* margin: 0.1rem 2rem; */
+    padding: 1rem;
+    width: 40%;
+    /* height: 300px; */
+    font-size: 1.5rem;
   }
 }
