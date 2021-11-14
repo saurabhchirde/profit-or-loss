@@ -20,41 +20,47 @@ hr {
 }
 .container {
   margin: 2rem auto;
-  width: 350px;
+  width: 340px;
   text-align: center;
   font-size: 1.4rem;
 }
 
 input {
   font-size: 1.2rem;
-  width: 185px;
+  width: 150px;
   text-align: center;
-  padding: 0.5rem 0 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 30px;
 }
 
-.calculate {
-  font-size: 1.5rem;
-  margin: 1.8rem auto;
-  width: 338px;
-  padding: 10px 120px;
+.calculate,
+.clear {
+  font-size: 1.2rem;
+  margin: 1.8rem 0.4rem 1.8rem 0.4rem;
+  display: inline-block;
+  width: 45%;
+  padding: 10px 30px 10px 30px;
   border-radius: 30px;
   background-color: var(--button-color);
   color: var(--text-color);
   border-color: var(--text-color);
 }
+.clear {
+  background-color: var(--secondary-color);
+}
 
 .message {
   margin: 0.1rem auto;
   padding: 0.8rem;
+  text-align: center;
   border: 1px dashed var(--button-color);
   width: 315px;
   height: 180px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .activeProfit {
-  color: rgb(80, 224, 36);
+  color: rgb(76, 216, 33);
 }
 
 .activeLoss {
