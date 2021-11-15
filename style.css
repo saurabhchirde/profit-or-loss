@@ -85,7 +85,7 @@ input {
   color: rgb(255, 0, 0);
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 850px) {
   .container {
     display: inline-block;
     vertical-align: middle;
