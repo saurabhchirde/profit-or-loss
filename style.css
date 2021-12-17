@@ -71,11 +71,13 @@ input {
 }
 
 .borderProfit {
-  box-shadow: inset 0px 0px 80px rgb(76, 216, 33), 0px 0px 80px rgb(76, 216, 33);
+  box-shadow: inset 0px 0px 80px rgb(136, 255, 100),
+    0px 0px 80px rgb(76, 216, 33);
 }
 
 .borderLoss {
-  box-shadow: inset 0px 0px 80px red, 0px 0px 80px red;
+  box-shadow: inset 0px 0px 80px rgb(255, 103, 103),
+    0px 0px 80px rgba(255, 0, 0, 0.459);
 }
 
 .activeProfit {

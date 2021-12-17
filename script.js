@@ -30,20 +30,20 @@ function calProfitOrLoss() {
       output.classList.remove("border");
       output.classList.add("borderLoss");
       output.classList.add("activeLoss");
-
-      output.innerText = `Your loss is ${buyValue - sellValue} , you lost ${
-        ((buyValue - sellValue) * 100) / buyValue
-      }% in this trade :(`;
+      const lossPercent = `${((buyValue - sellValue) * 100) / buyValue}`;
+      output.innerText = `Your loss is Rs.${
+        buyValue - sellValue
+      }, you lost ${lossPercent.slice(0, 5)}% in this trade.`;
     } else {
       output.classList.remove("activeLoss");
       output.classList.remove("borderLoss");
       output.classList.remove("border");
       output.classList.add("borderProfit");
       output.classList.add("activeProfit");
-
-      output.innerText = `Your Profit is ${sellValue - buyValue} , you gain ${
-        ((sellValue - buyValue) * 100) / buyValue
-      }% in this trade :)`;
+      const profitPercent = ((sellValue - buyValue) * 100) / buyValue;
+      output.innerText = `Your Profit is Rs.${
+        sellValue - buyValue
+      }, you gain ${profitPercent.slice(0, 5)}% in this trade.`;
     }
   } else {
     output.innerText = "Enter valid stock prices !";
