@@ -40,7 +40,7 @@ function calProfitOrLoss() {
       output.classList.remove("border");
       output.classList.add("borderProfit");
       output.classList.add("activeProfit");
-      const profitPercent = ((sellValue - buyValue) * 100) / buyValue;
+      const profitPercent = `${((sellValue - buyValue) * 100) / buyValue}`;
       output.innerText = `Your Profit is Rs.${
         sellValue - buyValue
       }, you gain ${profitPercent.slice(0, 5)}% in this trade.`;
