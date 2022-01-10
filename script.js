@@ -5,7 +5,7 @@ const btnCal = document.querySelector(".calculate");
 const output = document.querySelector(".output");
 const btnClear = document.querySelector(".clear");
 
-function start() {
+const start = () => {
   sp.value = "";
   bp.value = "";
   qty.value = "";
@@ -15,14 +15,15 @@ function start() {
   output.classList.remove("activeLoss");
   output.classList.remove("borderProfit");
   output.classList.remove("borderLoss");
-}
+};
 
-function calProfitOrLoss() {
+const calProfitOrLoss = () => {
   const sellPrice = sp.value;
   const buyPrice = bp.value;
   const stockQty = qty.value;
   const buyValue = buyPrice * stockQty;
   const sellValue = sellPrice * stockQty;
+
   if (buyValue > 0 && sellValue >= 0) {
     if (buyValue > sellValue) {
       output.classList.remove("activeProfit");
@@ -48,7 +49,7 @@ function calProfitOrLoss() {
   } else {
     output.innerText = "Enter valid stock prices !";
   }
-}
+};
 
 btnCal.addEventListener("click", calProfitOrLoss);
 
